@@ -4,8 +4,6 @@ lambda = 0.5;
 
 pdf = lambda*exp(-lambda*t);
 
-cdf = 1 - exp(-lambda*t);
-
 mgf = lambda/(lambda - s);
 
 fun_s = subs(mgf, s, -s);
